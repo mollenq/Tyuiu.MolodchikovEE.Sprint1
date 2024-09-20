@@ -25,15 +25,13 @@ namespace Tyuiu.MolodchikovEE.Sprint1.Task2.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x;
-
             Console.WriteLine("Введите расстояние в дюймах:");
-            x = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Расстояние в метрах = " + ds.Calculate(x));
+            Console.WriteLine("Расстояние в метрах = " + ds.ConvertInchToKm(x));
             Console.ReadLine();
         }
     }
