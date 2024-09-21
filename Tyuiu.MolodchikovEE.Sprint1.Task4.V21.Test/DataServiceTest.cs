@@ -10,9 +10,9 @@ namespace Tyuiu.MolodchikovEE.Sprint1.Task4.V21.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double x = 1;
-            double y = 0;
-            double wait = 4;
+            double x = 60;
+            double y = 30;
+            double wait = 41.011;
             var res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
         }
